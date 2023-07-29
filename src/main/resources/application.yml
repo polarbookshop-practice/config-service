@@ -15,7 +15,7 @@ spring:
       config:
         server:
           git: # The config server uses Git as the backend
-            uri: https://github.com/fankao/config-repo # The URI of the config repo
+            uri: https://github.com/polarbookshop-practice/config-repo # The URI of the config repo
             default-label: main # The default branch of the config repo
             timeout: 5 # Time limit to establish a connection with the remote repository
             clone-on-start: true # The config repo is cloned on startup
