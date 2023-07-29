@@ -1,0 +1,19 @@
+server:
+  port: 8888 # The config server runs on port 8888
+  # The following is the default context path for the config server
+  tomcat: # The following are the default Tomcat settings
+    connection-timeout: 2s # 2 seconds
+    keep-alive-timeout: 15s # 15 seconds
+    threads: # The following are the default thread pool settings
+      max: 50 # 50 threads are allowed
+      min-spare: 5 # 5 threads are always kept alive
+spring:
+  application:
+    name: config-service # The name of the config server
+    # The following is the default context path for the config server
+    cloud:
+      config:
+        server:
+          git: # The config server uses Git as the backend
+            uri: https://github.com/fankao/config-repo # The URI of the config repo
+            default-label: main # The default branch of the config repo
