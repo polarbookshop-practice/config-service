@@ -10,7 +10,7 @@ server:
 spring:
   application:
     name: config-service # The name of the config server
-    # The following is the default context path for the config server
+  # The following is the default context path for the config server
   cloud:
     config:
       server:
