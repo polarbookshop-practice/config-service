@@ -7,9 +7,12 @@ server:
     threads: # The following are the default thread pool settings
       max: 50 # 50 threads are allowed
       min-spare: 5 # 5 threads are always kept alive
+  shutdown: graceful
 spring:
   application:
     name: config-service # The name of the config server
+  lifecycle:
+    timeout-per-shutdown-phase: 15s
   # The following is the default context path for the config server
   cloud:
     config:
