@@ -20,4 +20,4 @@ After building the application, you can also run it from the Java CLI:
 java -jar build/libs/config-service-0.0.1-SNAPSHOT.jar
 ```
 
-![img.png](img.png)
+![img.png](assets/img.png)
